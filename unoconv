@@ -1094,9 +1094,6 @@ class Convertor:
                     # The document doesn't implement the XRefreshable and/or
                     # XDocumentIndexesSupplier interfaces
                     break
-                else:
-                    for i in range(0, indexes.getCount()):
-                        indexes.getByIndex(i).update()
 
             info(1, "Selected output format: %s" % outputfmt)
             info(2, "Selected office filter: %s" % outputfmt.filter)
